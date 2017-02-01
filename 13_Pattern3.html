@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Pattern 3</title>
+<script type="text/javascript">
+
+var min = 1;
+var n=parseInt(prompt("Enter no of rows: "));
+var spc = n - 1;
+
+for(var i=0;i<n;i++)
+ {
+	for(var j=spc;j>i;j--)
+		document.write("&nbsp;&nbsp;");
+   
+	for(var k=0; k<min; k++)
+		document.write("*");
+	
+	min+=2;
+	document.write("<br />");
+ }
+</script>
+</head>
+</html>

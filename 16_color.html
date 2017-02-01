@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Alert Box</title>
+<script>
+	function changeColor()
+	{
+		var newcolor = document.getElementById('pcolor').value;
+		document.getElementById('para').style.color = newcolor;
+	}
+</script>
+</head>
+<body>
+<h1 align="center"> Change Color</h1>
+<p id="para"> Hello World </p>
+<select id="pcolor" onchange="changeColor()">
+<option value="black">black</option>
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+</select>
+</body>
+</html>

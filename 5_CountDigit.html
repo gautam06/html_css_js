@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Count Digit</title>
+<script>
+function countDigit()
+{
+	var n,ct=0;
+	n = document.getElementById("num").value;;
+	if(!isNaN(n))
+	{
+		while(n>0)
+		{
+			ct++;
+			n=parseInt(n/10);
+		}
+		document.write("Total Digits: "+ct);
+	}
+	else
+	{
+		document.write("Invalid Input");
+	}
+}
+</script>
+</head>
+<body>
+<input type="text" id="num" />
+<input type="button" value="Count Digits" onClick="countDigit()" />
+</body>
+</html> 

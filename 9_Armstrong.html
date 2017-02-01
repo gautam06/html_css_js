@@ -1,0 +1,26 @@
+<html>
+<head><TITLE>Armstrong</TITLE>
+<script>
+function checkArmstrong()
+{
+	var e,x,d=0;
+	var b=document.getElementById("num").value;
+	x=b;
+	while(x>0)
+	{
+	e=x%10;
+	d=d+(e*e*e);
+	x=parseInt(x/10);
+	}
+	if(b==d)
+	document.write(b +" is amstrong number");
+	else
+	document.write(b +" is not an amstrong number");
+}
+</script>
+</head>
+<body>
+<input type="text" id="num" />
+<input type="button" value="Check Armstrong" onClick="checkArmstrong()" />
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Greater Number</title>
+<script>
+var a = parseInt(prompt("Enter first number: "));
+var b = parseInt(prompt("Enter second number: "));
+
+if(isNaN(a) || isNaN(b))
+{
+	alert("Invalid Input");
+}
+else
+{
+	if(a == b)
+		alert("Both numbers are same");
+	else if(a > b)
+		alert(a +" is greater than "+ b);
+	else
+		alert(b +" is greater than "+ a);
+}
+</script>
+</head>
+</html>

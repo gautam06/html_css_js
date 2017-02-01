@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Pattern 5</title>
+<script type="text/javascript">
+
+var i,j,k;
+var n=parseInt(prompt("Enter size: "));
+
+//top pyramid
+
+for(i=0;i<n;i++)
+{
+	for(j=n-1;j>=i;j--)
+		document.write("&nbsp;&nbsp;");
+   
+	for(var k=1; k<=i; k++)
+		document.write("*&nbsp;&nbsp;");
+	
+	document.write("<br />");
+}
+
+//bottom pyramid
+
+for(i=n;i>0;i--)
+{
+	for(j=n;j>i;j--)
+		document.write("&nbsp;&nbsp;");
+   
+	for(var k=i; k>=1; k--)
+		document.write("*&nbsp;&nbsp;");
+	
+	document.write("<br />");
+}
+</script>
+</head>
+</html>

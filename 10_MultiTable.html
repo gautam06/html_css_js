@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+    
+		var fno = parseInt(prompt("Enter First Number"));
+		var lno = parseInt(prompt("Enter Last Number"));
+		
+		for(j=fno; j<=lno; j++)
+		{
+			var table="";
+			var num="";
+			document.write("<div style='border:1px solid blue; padding:10px; display:inline-block;'>")
+			for(i=1;i<=10;i++) {
+				num = j * i;
+				table +=  j + " * " + i + " = " + num + "<br/>";
+			}
+			document.write(table);
+			document.write("</div>")
+		}
+		
+</script>
+</head>
+</html>   

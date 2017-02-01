@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+	function checkDigit()
+	{
+		var pattern = new RegExp("^[7-9]{1}[0-9]{9}$","i");
+		var str = document.getElementById("data").value;
+		
+		if(pattern.test(str))
+		{
+			alert("Valid");
+		}
+		else
+		{
+			alert("Invalid");
+		}
+	}
+
+</script>
+</head>
+
+<body>
+<H1 align="center"> Mobile Number Validation </H1>
+<input type="text" id="data" maxlength="10">
+<input type="button" value="Click Me" onclick="checkDigit()">
+
+</body>
+</html>

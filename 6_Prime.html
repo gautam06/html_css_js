@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Prime Number</title>
+<script>
+		
+function test_prime()  
+{  
+  var n = document.getElementById("num").value;
+  var isPrime=false;
+  
+  if (n===1)  
+  {  
+    document.write(n +" is not Prime number");  
+  }  
+  else if(n == 2)  
+  {
+	document.write(n +" is Prime number");
+  }
+  else  
+  {  
+    for(var x = 2; x < n; x++)  
+    {  
+      if(n % x === 0)  
+      {  
+        isPrime=false;
+		break;
+      }
+	  isPrime=true;
+    }
+
+	if(isPrime == true)
+		document.write(n +" is Prime number");
+	else
+		document.write(n +" is not Prime number");
+  }  
+}  
+  	
+</script>
+</head>
+<body>
+<input type="text" maxlength=10 id="num" />
+<input type="button" value="CheckPrime" onClick="test_prime()" />
+</body>
+</html>

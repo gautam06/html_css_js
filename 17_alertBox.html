@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Alert Box</title>
+<script>
+	function clearData()
+	{
+		alert("hi");
+		document.getElementById("fname").value = "";
+		document.getElementById("lname").value = "";
+		document.getElementById("add").value = "";
+		document.getElementById("qua").value = "";
+		document.getElementById("eml").value = "";
+		document.getElementById("mob").value = "";
+	}
+	function displayData()
+	{
+		alert(" First Name : "+document.getElementById("fname").value);
+		alert(" Last Name : "+document.getElementById("lname").value);
+		alert(" Address : "+document.getElementById("add").value);
+		alert(" Qualification : "+document.getElementById("qua").value);
+		alert(" Email : "+document.getElementById("eml").value);
+		alert(" Mobile No: "+document.getElementById("mob").value);		
+	}
+</script>
+</head>
+<body>
+<table>
+<tr><td>First Name:</td><td> <input type="text" id="fname" /> </td></tr>
+<tr><td>Last Name:</td><td> <input type="text" id="lname" /> </td></tr>
+<tr><td>Address:</td><td> <textarea cols=20 rows=3 id="add"></textarea></td></tr>
+<tr><td>Qualification:</td><td> <input type="text" id="qua" /> </td></tr>
+<tr><td>Email Id:</td><td> <input type="text" id="eml" /> </td></tr>
+<tr><td>Mobile No:</td><td> <input type="text" id="mob" /> </td></tr>
+<tr><td colspan="2"> <input type="button" value="Clear" onclick="clearData()" /> <input type="button" value="Submit" onclick="displayData();" /></td></tr>
+</table>
+</body>
+</html>
